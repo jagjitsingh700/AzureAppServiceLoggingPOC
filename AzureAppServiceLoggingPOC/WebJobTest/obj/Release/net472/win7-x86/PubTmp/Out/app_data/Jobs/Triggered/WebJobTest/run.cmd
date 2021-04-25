@@ -1,1 +1,0 @@
-WebJobTest.exe %*
