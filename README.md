@@ -46,7 +46,7 @@ So in short, this is a solution to demonstrate how to turn on logging capabiliti
 
   az storage account create -n loggingappstorage -g AzureLoggingPOC -l centralindia --sku Standard_LRS
 
-**STEP 5. Now as all resources deployed. Log into Azure Portal and go into your App Service and in the Monitoring section click at App Service Logs. **
+**STEP 5. Now as all resources deployed. Log into Azure Portal and go into your App Service and in the Monitoring section click at App Service Logs.**
 
 **STEP 6. Turn on both:**
 - Application Logging (Filesystem)
