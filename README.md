@@ -30,7 +30,7 @@ So in short, this is a solution to demonstrate how to turn on logging capabiliti
 
   az appservice plan create --name AzureAppServiceLoggingPOCPlan --resource-group AzureLoggingPOC --location centralindia --sku FREE
 
-**STEP 3. Create a Web App where the application will run, basically an App Service with deployed code from this Github Repo. **
+**STEP 3. Create a Web App where the application will run, basically an App Service with deployed code from this Github Repo.**
 
   az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --deployment-source-url $gitRepo
 
