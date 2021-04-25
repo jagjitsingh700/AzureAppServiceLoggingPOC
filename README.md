@@ -11,6 +11,7 @@ So in short, this is a solution to demonstrate how to turn on logging capabiliti
 2. Resource group in Azure for deploying this POC. 
 3. PowerShell Core / Windows Azure SDK Environment / Any other shell with Azure CLI installed in Windows / Linux. 
 4. You can clone the solution locally, but it's not a requirement as deployment will happen from Github URI directly to Azure (Optional) 
+(In case you are not able to deploy from Github URI directly, then clone and deploy from for example Visual Studio). 
 
 # STEPS
 
@@ -37,6 +38,8 @@ So in short, this is a solution to demonstrate how to turn on logging capabiliti
   Example:
 
   az webapp create --name LoggingAppPOC500 --resource-group AzureLoggingPOC --plan AzureAppServiceLoggingPOCPlan --deployment-source-url https://github.com/jagjitsingh700/AzureAppServiceLoggingPOC.git
+  
+ NB! I had some issues deploying from Github, so I deployed from Visual Studio locally to Azure. So just clone repository and deploy from VS. 
 
 **STEP 4. Create a Storage Account where we will keep all the logs with retention**
 
