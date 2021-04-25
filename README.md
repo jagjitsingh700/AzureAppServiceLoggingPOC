@@ -1,6 +1,6 @@
-# AzureAppServiceLoggingPOC
+# AzureAppServiceLoggingPOC - MVC APP & Console App (Azure WebJob)
 
-This solution contains log messages in different levels from trace to critical. We are going to look closer at how to deploy this console application as WebJob to Azure in App Service, so we are able to see the log messages both in live stream and as files in Blob Storage. 
+This solution contains log messages in different levels from trace to critical. We are going to look closer at how to deploy both MVC App & console application(WebJob) to Azure in App Service, so we are able to see the log messages both in live stream and as files in Blob Storage for both. 
 
 So in short, this is a solution to demonstrate how to turn on logging capabilities in Azure App Service. 
 
