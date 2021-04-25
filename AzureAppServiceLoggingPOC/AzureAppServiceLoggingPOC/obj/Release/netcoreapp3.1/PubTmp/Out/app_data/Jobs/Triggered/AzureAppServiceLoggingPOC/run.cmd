@@ -1,0 +1,1 @@
+dotnet AzureAppServiceLoggingPOC.dll %*

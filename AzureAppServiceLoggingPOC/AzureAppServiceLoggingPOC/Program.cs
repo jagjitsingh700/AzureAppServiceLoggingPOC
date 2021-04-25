@@ -13,6 +13,8 @@ namespace AzureAppServiceLoggingPOC
             ServiceProvider serviceProvider = services.BuildServiceProvider();
             LoggingApplication app = serviceProvider.GetService<LoggingApplication>();
 
+            Console.WriteLine("WebJob Executed");
+
             // Initiale All Levels
             app.LogTrace();
             app.LogDebug();
@@ -24,7 +26,11 @@ namespace AzureAppServiceLoggingPOC
 
         private static void ConfigureServices(ServiceCollection services)
         {
-            services.AddLogging(configure => configure.AddConsole())
+            services.AddLogging(loggingBuilder =>
+            {
+                loggingBuilder.AddConsole();
+                loggingBuilder.AddAzureWebAppDiagnostics();
+            })
             .AddTransient<LoggingApplication>();
         }
     }

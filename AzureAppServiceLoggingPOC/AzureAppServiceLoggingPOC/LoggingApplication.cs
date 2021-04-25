@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using System;
 
 namespace AzureAppServiceLoggingPOC
 {
@@ -33,6 +34,10 @@ namespace AzureAppServiceLoggingPOC
 
         public void LogError()
         {
+            System.Diagnostics.Trace.TraceError("Level 4 Initiated - Error");
+
+            throw new Exception();
+
             _logger.LogError("Level 4 Initiated - Error");
         }
 
