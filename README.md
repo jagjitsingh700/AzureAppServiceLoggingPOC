@@ -60,3 +60,10 @@ So in short, this is a solution to demonstrate how to turn on logging capabiliti
 When turning on Application Logging (Blob) select the existing Storage account you created in step 4. But you will need to create a container in that storage account also, just call it asplogs and enter 5 days at Retention Period. 
 **
 NB! Remember to select log level. I select Error on Application Logging to not store to much log data because it can affect performance, but on the permanent storage I select Verbose because that will not affect app performance. Remember Application Logs are default deleted after 12 hours. **
+
+
+Optional:
+
+You can always connect to an app service with one instance and enable live log streaming with following command:
+
+az webapp log tail --name LoggingAppPOC500 --resource-group AzureLoggingPOC
